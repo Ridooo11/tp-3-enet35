@@ -17,10 +17,10 @@ void encontrarMayorYMenor(int *array, int longitud, int *mayor, int *menor) {
 	int i;
 	*mayor = *menor = array[0];
 	for (i = 1; i < longitud; i++) {
-		if (array[i] > *mayor) {
+		if (*(array + i) > *mayor) {
             *mayor = *(array + i); 
         }
-        if (array[i] < *menor) {
+        if (*(array + i) < *menor) {
             *menor = *(array + i); 
         }
 	}
