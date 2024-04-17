@@ -5,10 +5,10 @@ void encontrarMayorYMenor(int *array, int longitud, int *mayor, int *menor) {
 	*mayor = *menor = array[0];
 	for (i = 1; i < longitud; i++) {
 		if (array[i] > *mayor) {
-            *mayor = array[i]; 
+            *mayor = *(array + i); 
         }
         if (array[i] < *menor) {
-            *menor = array[i]; 
+            *menor = *(array + i); 
         }
 	}
 }
